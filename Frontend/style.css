@@ -1,0 +1,13 @@
+body {
+  background-image: url(./resources/Hall.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.card {
+  background: rgba(97, 97, 97, 0.5); /* Dark transparent */
+  color: white;
+  border-radius: 10px;
+}
