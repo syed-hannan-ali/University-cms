@@ -1,4 +1,5 @@
-body {
+
+.signin-body , .signup-body {
   background-image: url(./resources/Hall.jpg);
   background-size: cover;
   background-position: center;
@@ -11,3 +12,4 @@ body {
   color: white;
   border-radius: 10px;
 }
+
