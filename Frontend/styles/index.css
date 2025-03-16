@@ -104,9 +104,11 @@
   border-radius: 0.8rem;
 }
 
-.sidebar ul li a:hover {
+.sidebar ul li a:hover,
+.sidebar ul li a:focus {
   background-color: #fff;
   color: #12171e;
+  outline: none;
 }
 
 .sidebar ul {
