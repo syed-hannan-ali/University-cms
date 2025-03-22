@@ -10,15 +10,27 @@
     <link rel="stylesheet" href="./styles/signin-up.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Sign in</title>
+    <title>Sign Up</title>
+
+    
   </head>
-  <body class="signup-body">
+  <body class="signup-body signup-form">
+  
+    <div class="navbar">
+      <h3>College Management System</h3>
+      <form>
+        <input type="text" class="input-box" placeholder="Email or ID" required/>
+        <input type="password" class="input-box" placeholder="Password" required/>
+        <button class="login-btn">Log In</button>
+      </form>
+    </div>
+    
     <!-- making a center div for the sign-in page  -->
 
-    <div
-      class="container d-flex justify-content-center align-items-center vh-100"
-    >
+    <div class="container d-flex justify-content align-items-center vh-100">
       <div class="col-md-6">
+
+
         <div class="card shadow lg p-4">
           <!-- Form for Email and Password -->
           <form>
