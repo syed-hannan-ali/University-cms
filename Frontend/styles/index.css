@@ -131,7 +131,7 @@
   opacity: 1;
 }
 
-.sidebar ul li .mytooltip {
+/* .sidebar ul li .mytooltip {
   position: absolute;
   background-color: rgb(214, 212, 212);
   left: 125px;
@@ -151,7 +151,7 @@
 
 .sidebar.active ul li .mytooltip {
   display: none;
-}
+} */
 
 .main-content {
   position: relative;
@@ -167,4 +167,55 @@
 .content1 {
   display: flex;
   justify-content: space-between;
+}
+
+/* Container Styling */
+.container {
+  margin-top: 20px;
+}
+
+/* Section Header Styling */
+.section-header {
+  background-color: #2b3990;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* Section Content Styling */
+.section-content {
+  background-color: white;
+  padding: 15px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom : 10px
+}
+
+/* Profile Box Styling */
+.profile-box {
+  margin-bottom: 20px;
+}
+
+/* Row Styling */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Column Styling */
+.col-md-6 {
+  width: 48%;
+  padding: 8px;
+  font-size: 14px;
+}
+
+/* Label Styling */
+.col-md-6 span {
+  font-weight: bold;
+  color: #2b3990;
 }
