@@ -1,0 +1,19 @@
+.main-content {
+    position: relative;
+    background-color: #eee;
+    min-height: 100vh;
+    width: calc(100% - 80px);
+    top: 0;
+    left: 80px;
+    transition: all 0.3s ease;
+    padding: 1rem;
+  }
+  .card-header {
+    background-color: #354357 !important;
+    color: white !important;
+  }
+
+  .table-responsive {
+    overflow-x: auto;
+    width: 100%;
+}

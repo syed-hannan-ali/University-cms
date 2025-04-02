@@ -129,3 +129,22 @@
 .sidebar.active .nav-item {
   opacity: 1;
 }
+
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 60px;
+  }
+
+  .sidebar.active {
+    width: 200px;
+  }
+
+  .main-content {
+    margin-left: 60px;
+  }
+
+  .sidebar.active ~ .main-content {
+    margin-left: 200px;
+  }
+}
