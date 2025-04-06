@@ -2,10 +2,7 @@
     margin-left: 80px;
     padding: 20px;
     transition: all 0.3s ease;
-}
-
-.sidebar:hover ~ .main-content {
-    margin-left: 250px;
+    min-height: 100vh;
 }
 
 .header-section {
@@ -88,10 +85,6 @@
 @media (max-width: 768px) {
     .main-content {
         margin-left: 60px;
-    }
-    
-    .sidebar:hover ~ .main-content {
-        margin-left: 200px;
     }
 
     .header-section {

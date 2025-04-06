@@ -1,11 +1,10 @@
 .main-content {
     margin-left: 80px;
     padding: 20px;
+    background-color: #eee;
+    min-height: 100vh;
+    width: calc(100% - 80px);
     transition: all 0.3s ease;
-}
-
-.sidebar:hover ~ .main-content {
-    margin-left: 250px;
 }
 
 .header-section {
@@ -94,6 +93,7 @@
     .main-content {
         margin: 0 !important;
         padding: 0 !important;
+        width: 100% !important;
     }
 
     .challan-card {
@@ -117,10 +117,7 @@
 @media (max-width: 768px) {
     .main-content {
         margin-left: 60px;
-    }
-    
-    .sidebar:hover ~ .main-content {
-        margin-left: 200px;
+        width: calc(100% - 60px);
     }
 
     .header-section {
