@@ -1,10 +1,12 @@
 .main-content {
-    margin-left: 80px;
-    padding: 20px;
+    position: relative;
     background-color: #eee;
     min-height: 100vh;
     width: calc(100% - 80px);
+    top: 0;
+    left: 80px;
     transition: all 0.3s ease;
+    padding: 1rem;
 }
 
 .header-section {
