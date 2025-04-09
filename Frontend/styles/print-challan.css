@@ -3,8 +3,14 @@
     padding: 20px;
     background-color: #eee;
     min-height: 100vh;
+    height: 100%;
     width: calc(100% - 80px);
     transition: all 0.3s ease;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
 }
 
 .header-section {
