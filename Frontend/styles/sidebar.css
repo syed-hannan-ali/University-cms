@@ -152,15 +152,15 @@
   }
 
   .sidebar:hover {
-    width: 200px;
+    width: 250px;
 
   }
 
-  /* .main-content {
-    margin-left: 60px;
-  } */
+  .main-content {
+    left: 80px;
+  }
 
   .sidebar:hover ~ .main-content {
-    width: calc(100% - 250px);
+    width: calc(100% - 200px);
   }
 }
