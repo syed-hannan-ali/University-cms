@@ -12,6 +12,11 @@
   bottom: 0;
   overflow-y: auto;
 }
+.sidebar:hover ~ .main-content,
+.sidebar.active ~ .main-content {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+}
 
 .card-header {
   background-color: #354357 !important;

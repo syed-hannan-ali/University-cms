@@ -1,4 +1,5 @@
 .main-content {
+<<<<<<< HEAD
   position: relative;
   background-color: #eee;
   min-height: 100vh;
@@ -7,6 +8,26 @@
   left: 80px;
   transition: all 0.3s ease;
   padding: 1rem;
+
+    margin-left: 80px;
+    padding: 20px;
+    background-color: #eee;
+    min-height: 100vh;
+    height: 100%;
+    width: calc(100% - 80px);
+    transition: all 0.3s ease;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+}
+
+.sidebar:hover ~ .main-content,
+.sidebar.active ~ .main-content {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+>>>>>>> 3050561 (Minor Alteration)
 }
 
 .card {
@@ -46,6 +67,25 @@
 }
 
 .btn-sm {
+<<<<<<< HEAD
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
 }
+=======
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 60px;
+        width: calc(100% - 60px);
+    }
+    
+    .sidebar:hover ~ .main-content,
+    .sidebar.active ~ .main-content {
+        margin-left: 200px;
+        width: calc(100% - 200px);
+    }
+}
+>>>>>>> 3050561 (Minor Alteration)

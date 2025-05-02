@@ -12,6 +12,11 @@
   bottom: 0;
   overflow-y: auto;
 }
+.sidebar:hover ~ .main-content,
+.sidebar.active ~ .main-content {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+}
 
 .content1 {
   display: flex;
