@@ -1,0 +1,111 @@
+.main-content {
+    position: relative;
+    background-color: #eee;
+    min-height: 100vh;
+    width: calc(100% - 80px);
+    top: 0;
+    left: 80px;
+    transition: all 0.3s ease;
+    padding: 1rem;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.breadcrumb {
+  margin-bottom: 0;
+}
+
+.breadcrumb-item a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.card-header {
+  background-color: #354357;
+  padding: 15px;
+  color: white;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+.table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  padding: 12px;
+}
+
+.table td {
+  padding: 8px 12px;
+  vertical-align: middle;
+}
+
+.semester-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.arrow-button {
+  display: flex;
+  align-items: center;
+  background-color: #63779c;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  width: fit-content;
+  transition: background-color 0.3s ease;
+}
+
+.arrow-button:hover {
+  background-color: #354357;
+}
+
+.arrow-button i {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.arrow-button span {
+  font-weight: 500;
+}
+
+/* Hover effect for table rows */
+.table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+@media (max-width: 768px) {
+
+    .header-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+  .breadcrumb {
+    margin-top: 10px;
+  }
+
+  .table-responsive {
+    margin: 0 -15px;
+  }
+
+  .arrow-button {
+    padding: 4px 8px;
+  }
+
+  .arrow-button i {
+    font-size: 18px;
+  }
+}

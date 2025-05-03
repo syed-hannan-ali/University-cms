@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        />
+        <link
+          href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+          rel="stylesheet"
+        />
+    
+        <link
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+          rel="stylesheet"
+        />
+        <link rel="icon" type="image/jpg" href="./Images/favicon.jpg">
+        <link rel="stylesheet" href="./styles/feedback.css" />
+        <link rel="stylesheet" href="./styles/sidebar.css" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <title>Feedback</title>
+      </head>
+<body>
+    <div class="sidebar">
+        <div class="top">
+          <div class="logo">
+            <i class="bx bxs-institution"></i>
+            <span>CMS</span>
+          </div>
+          <!-- <i class="material-symbols-outlined" id="btn">menu</i> -->
+        </div>
+        <div class="user-div">
+          <i class="bx bxs-user-circle" style="font-size: 50px"></i>
+          <p class="user-span">User</p>
+        </div>
+        <ul>
+          <li>
+            <a href="./index.html">
+              <i class="material-symbols-outlined">home</i>
+              <span class="nav-item">DASHBOARD</span>
+            </a>
+          </li>
+          <li>
+            <a href="./attendance.html">
+              <i class="material-symbols-outlined">school</i>
+              <span class="nav-item">ATTENDANCE</span>
+            </a>
+          </li>
+          <li>
+            <a href="./marks.html">
+              <i class="material-symbols-outlined">description</i>
+              <span class="nav-item">MARKS</span>
+            </a>
+          </li>
+          <li>
+            <a href="./transcript.html">
+              <i class="material-symbols-outlined">history_edu</i>
+              <span class="nav-item">TRANSCRIPT</span>
+            </a>
+          </li>
+          <li>
+            <a href="./challans.html">
+              <i class="material-symbols-outlined">money</i>
+              <span class="nav-item">CHALLANS</span>
+            </a>
+          </li>
+          <li>
+            <a href="./feedback.html">
+              <i class="material-symbols-outlined">feedback</i>
+              <span class="nav-item">FEEDBACK</span>
+            </a>
+          </li>
+          <li>
+            <a href="./signin-up.html">
+              <i class="material-symbols-outlined">logout</i>
+              <span class="nav-item">LOGOUT</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <div class="container mt-4">
+          <h3>Feedback</h3>
+          <div class="alert alert-info" role="alert">
+            <strong>Note:</strong> Your feedback helps us improve the system.
+          </div>
+
+          <!-- Feedback Form -->
+          <div class="card mb-4">
+            <div class="card-header text-white">
+              <strong>Submit Feedback</strong>
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="mb-3">
+                  <label for="courseSelect" class="form-label">Select Course</label>
+                  <select class="form-select" id="courseSelect">
+                    <option selected>CS4037 - Introduction to Cloud Computing</option>
+                    <option>CS4048 - Software Engineering</option>
+                    <option>CS4104 - Database Systems</option>
+                    <option>MG4011 - Business Management</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="feedbackType" class="form-label">Feedback Type</label>
+                  <select class="form-select" id="feedbackType">
+                    <option selected>Course Content</option>
+                    <option>Teaching Methodology</option>
+                    <option>Assessment</option>
+                    <option>Resources</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="feedbackText" class="form-label">Your Feedback</label>
+                  <textarea class="form-control" id="feedbackText" rows="4" placeholder="Please provide your detailed feedback here..."></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="rating" class="form-label">Rating (1-5)</label>
+                  <input type="range" class="form-range" min="1" max="5" step="1" id="rating">
+                  <div class="d-flex justify-content-between">
+                    <span>1 - Poor</span>
+                    <span>2 - Fair</span>
+                    <span>3 - Good</span>
+                    <span>4 - Very Good</span>
+                    <span>5 - Excellent</span>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Feedback</button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Feedback History -->
+          <div class="card">
+            <div class="card-header text-white">
+              <strong>Feedback History</strong>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered">
+                  <thead class="table-primary">
+                    <tr>
+                      <th>Date</th>
+                      <th>Course</th>
+                      <th>Type</th>
+                      <th>Rating</th>
+                      <th>Status</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>15-Mar-2025</td>
+                      <td>CS4037</td>
+                      <td>Course Content</td>
+                      <td>4</td>
+                      <td><span class="badge bg-success">Submitted</span></td>
+                      <td><button class="btn btn-sm btn-info">View</button></td>
+                    </tr>
+                    <tr>
+                      <td>10-Mar-2025</td>
+                      <td>CS4048</td>
+                      <td>Teaching Methodology</td>
+                      <td>5</td>
+                      <td><span class="badge bg-success">Submitted</span></td>
+                      <td><button class="btn btn-sm btn-info">View</button></td>
+                    </tr>
+                    <tr>
+                      <td>05-Mar-2025</td>
+                      <td>CS4104</td>
+                      <td>Assessment</td>
+                      <td>3</td>
+                      <td><span class="badge bg-success">Submitted</span></td>
+                      <td><button class="btn btn-sm btn-info">View</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
